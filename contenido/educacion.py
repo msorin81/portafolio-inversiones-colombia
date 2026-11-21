@@ -146,7 +146,7 @@ RUTA_PRINCIPIANTE = [
     ("Fondo de emergencia", "3 a 6 meses de gastos en una cuenta remunerada o CDT corto, protegidos por Fogafín."),
     ("Define metas y plazos", "¿Para qué inviertes? ¿Cuándo necesitarás el dinero? (< 1 año, 1-5 años, > 5 años)."),
     ("Conoce tu perfil de riesgo", "Pestaña 🧭 Mi perfil: cuánta caída aguantas sin vender."),
-    ("Escoge vehículo y plataforma", "Pestaña 🇨🇴 Invertir desde Colombia: CDT, FIC, ETFs locales, MGC o broker internacional."),
+    ("Escoge vehículo y plataforma", "Pestaña 🏦 Invertir desde Colombia: CDT, FIC, ETFs locales, MGC o broker internacional."),
     ("Arma tu portafolio", "Pestaña ⚖️ Portafolio: pocos ETFs diversificados, peso máximo por activo."),
     ("Automatiza aportes", "Invierte un monto fijo cada mes (DCA) y rebalancea una vez al año."),
     ("Declara e infórmate", "Lleva registro de compras/ventas para tu declaración de renta. Consulta un contador."),

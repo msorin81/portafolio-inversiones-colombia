@@ -212,7 +212,7 @@ if aviso_datos:
     st.info(aviso_datos)
 
 tabs = st.tabs(["🏠 Inicio", "🧭 Mi perfil", "📊 Activos", "⚖️ Portafolio", "🔮 Proyección",
-                "📝 Mi plan", "🇨🇴 Invertir desde Colombia", "📚 Academia"])
+                "📝 Mi plan", "🏦 Invertir desde Colombia", "📚 Academia"])
 
 # ══════════════════════════════════════════════════════════════
 # 1. INICIO
@@ -231,7 +231,7 @@ pensado para alguien que **está empezando** y vive en **Colombia**.
 3. **⚖️ Portafolio** — compara estrategias y obtén cuánto comprar de cada activo.
 4. **🔮 Proyección** — simula miles de futuros posibles y compáralos con un CDT.
 5. **📝 Mi plan** — resumen para decidir, con checklist y descarga.
-6. **🇨🇴 Invertir desde Colombia** y **📚 Academia** — productos, plataformas, impuestos y conceptos.
+6. **🏦 Invertir desde Colombia** y **📚 Academia** — productos, plataformas, impuestos y conceptos.
 
 Ajusta en la barra lateral ⬅️ los activos, tu capital y tu aporte mensual.
 """)
@@ -726,7 +726,7 @@ with tabs[5]:
 
     st.markdown("""
 **Próximos pasos sugeridos**
-1. Elige la plataforma (pestaña 🇨🇴) según tu monto y los activos del plan.
+1. Elige la plataforma (pestaña 🏦) según tu monto y los activos del plan.
 2. Haz la primera compra y **programa el aporte mensual** el mismo día de cada mes.
 3. Revisa el portafolio **cada 3 meses**, no todos los días.
 4. **Rebalancea una vez al año** volviendo a los pesos objetivo (idealmente con los aportes nuevos).
@@ -752,7 +752,7 @@ PESOS
 # 7. INVERTIR DESDE COLOMBIA
 # ══════════════════════════════════════════════════════════════
 with tabs[6]:
-    st.header("🇨🇴 Invertir desde Colombia")
+    st.header("🏦 Invertir desde Colombia")
     st.caption("Información orientativa (nov-2026). Tarifas, productos e impuestos cambian: verifica siempre en la fuente oficial.")
 
     st.subheader("🧰 Productos disponibles: de menor a mayor riesgo")
