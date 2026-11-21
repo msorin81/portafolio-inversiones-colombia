@@ -1,0 +1,31 @@
+name: Actualizar datos diarios
+
+on:
+  schedule:
+    # Lunes a viernes, 22:30 UTC = 5:30 p. m. hora Colombia (después del cierre de la bolsa de EE.UU.)
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch: {}   # permite ejecutarlo manualmente desde la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: pip install pandas numpy yfinance
+      - name: Descargar precios
+        run: python scripts/actualizar_datos.py
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "Sin cambios" && exit 0
+          git commit -m "Actualización automática de precios $(date -u +%Y-%m-%d)"
+          git push
