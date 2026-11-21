@@ -2,4 +2,8 @@
 primaryColor = "#636EFA"
 
 [server]
-headless = false
+# true = no pedir correo ni abrir navegador al iniciar (obligatorio en Streamlit Cloud)
+headless = true
+
+[browser]
+gatherUsageStats = false
